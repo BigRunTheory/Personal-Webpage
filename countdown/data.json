@@ -1,0 +1,56 @@
+[
+    {
+	    "venue": "AAAI",
+	    "area": "AI",
+	    "link": "http://www.aaai.org/Conferences/AAAI/aaai18",
+	    "deadline": "Sep 14, 2017 23:59 GMT"
+	},
+	{
+		"venue": "NIPS",
+		"area": "ML",
+		"link": "https://neurips.cc/",
+		"deadline": "May 12, 2020 23:59 PDT"
+	},
+	{
+		"venue": "IJCAI",
+		"area": "AI",
+		"deadline": "2/19/2017 23:59 UTC",
+		"link": "http://ijcai-17.org"
+	},
+	{
+		"venue": "ACL",
+		"area": "NLP",
+		"deadline": "06 February 2017 23:59 UTC",
+		"link": "http://acl2017.org/"
+	},
+	{
+		"venue": "EMNLP",
+		"area": "NLP",
+		"deadline": "Jun 1, 2020 23:59 UTC",
+		"link": "http://2020.emnlp.org/"
+	},
+	{
+		"venue": "CoNLL",
+		"area": "NLP",
+		"deadline": "June 5, 2020 23:59 UTC",
+		"link": "https://www.conll.org/2020"
+	},
+	{
+		"venue": "COLING",
+		"area": "NLP",
+		"deadline": "July 1, 2020 23:59 UTC",
+		"link": "https://coling2020.org/"
+	},
+	{
+		"venue": "IWPT",
+		"area": "NLP",
+		"deadline": "April 10, 2020 23:59 UTC",
+		"link": "http://iwpt20.sigparse.org/"
+	},
+	{
+		"venue": "AACL",
+		"area": "NLP",
+		"deadline": "June 26, 2020 23:59 UTC",
+		"link": "http://aacl2020.org/"
+	}
+]

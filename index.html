@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Run Chen</title>
+    <meta name="author" content="Run Chen" />
+    <meta name="description" content="Research in optimization theory and applications." />
+    <meta name="keywords" content="run, chen, optimization" />
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-sanitize.min.js"></script>
+    <script src="js/ui-bootstrap-tpls-0.12.1.min.js"></script>
+    <script type="text/javascript" src="js/source.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/homepage.css" />
+</head>
+<body ng-app="homepage">
+    <div id="OuterCanvas">
+        <div id="InnerCanvas">
+            <div id="Page">
+                <div class="title"><span class="name">Run Chen</span> <a href=""><img src="" width="200" height="" align = "right"/></a></div>
+                <div class="aboutSection content">
+                    <div class="main tops" ng-controller="info">
+                        <div class="panels">
+                            <div class="detailsPanel">
+                                <div class="txt">I am a Data & Applied Scientist at Microsoft. </div><br><br>
+                                <div class="txt">
+                                I obtained my Ph.D. degree from School of Industrial Engineering at Purdue Univesity, where I worked with Professor Andrew Liu in Operations Research. My research interests mainly focused on devevloping distributed algorithms for solving large-scale optimization problems with applicaitons to machine learning models and energy systems.</div><br><br>
+                                <div class="txt">
+                                Before pursuing my Ph.D. degree, I obatined my B.S. degree from University of Science and Technology of China, majoring in Theoretical Physics.</div><br><br>
+                            </div>
+                            <div class="infoPanel">
+                                <div class="item">
+                                <img src="Run_Chen.jpg" height="200" width="200" alt="Run Chen"/></div>
+                                <div class="item">
+                                <span class="ttl">Contact</span><br>
+                                <a class="keyword" target="_blank" ng-href="mailto:{{spams}}"><i class="fa fa-at"></i><span class="source">{{spams}}</span></a><br>
+                                <span class="ttl">Information</span><br>
+                                <a class="keyword" target="_blank" href="resume.pdf"><i class="fa fa-file"></i><span class="source">Resume</span></a><br>
+                                <a href="https://github.com/BigRunTheory" class="keyword" target="_blank"><i class="fa fa-github-square"></i><span class="source">Github</a></span><br>
+                                <a href="https://www.linkedin.com/in/run-chen-27b45ab0/" target="_blank" class="keyword"><i class="fa fa-linkedin-square"></i><span class="source">LinkedIn</span></a>
+                                <br><br>
+                                <a href="./countdown" target="_blank" class="keyword"><i class="fa fa-cog fa-spin"></i><span class="source">Academic CountDown</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div ng-controller="main" class="selectBar content">
+                  <tabset>
+                    <tab heading="Publications">
+                        <div class="slide">
+                            <div class="kbar">
+                                <div ng-repeat="details in data.keywords | orderBy:'id':false" class="keyword" ng-class="details.show?'kshow':'khide';" ng-click="toggleKeys(details.key)">
+                                    <div class="keyw" ng-style="{'background-color':details.color};"></div>
+                                    <span class="source">{{details.name}}</span>
+                                </div>
+                            </div>
+                            <div ng-repeat="typ in data.publications | filter:{show:true}">
+                                <div class="subhead">{{typ.name}}:</div><br>
+                                <div ng-repeat="paper in typ.list | filter:showPaper" class="item litem">
+                                    <div class="item litem">
+                                        <a ng-if="paper.Title" target="_blank"><div class="ttl" ng-bind-html="paper.Title"></div></a>
+                                        <div class="source">
+                                            <div ng-repeat="kw in paper.keywords" class="keyw" ng-style="{'background-color':data.keywords[kw].color}"></div>
+                                        </div><br>
+                                        <div class="txt ital">{{paper.source}} <span ng-if="paper.short">({{paper.short}})</span>, {{paper.year}}</div><br>
+                                        <div ng-repeat="ky in paper.authors" class="ppl"><a href="{{data.people[ky].url}}" target="_blank">{{data.people[ky].Name}}</a><span ng-if="!$last">,</span></div><br>
+                                        <div class="txt">
+                                            <a ng-if="paper.url" ng-if="paper.url" href="{{paper.url}}" target="_blank">pdf</a>
+                                            <a class="source" ng-if="paper.abstract" href="" ng-click="paper.ashow = !paper.ashow">abstract</a>
+                                            <a class="source" ng-if="paper.supp" target="_blank" ng-href="{{paper.supp}}">supplementary</a>
+                                            <a class="source" ng-if="paper.code" target="_blank" ng-href="{{paper.code}}">code</a>
+                                            <a class="source" ng-if="paper.data" target="_blank" ng-href="{{paper.data}}">data</a>
+                                            <a class="source" ng-if="paper.slides" target="_blank" ng-href="{{paper.slides}}">slides</a>
+                                            <a class="source" ng-if="paper.website" target="_blank" ng-href="{{paper.website}}">website</a></div><br>
+                                            <div class="txt abstract item" ng-if="paper.ashow" ng-bind-html="paper.abstract">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </tab>
+                    <tab heading="Notes">
+                    <div class="slide">
+                        Some notes written by me during my work and research:<br>
+                        <div class="item">
+                            <span class="ttl">Note 1.&nbsp; </span><span class="select-wrapper"><a href="notes/note_1.pdf" target="_blank">[pdf]</a></span>
+                        </div>
+                        <div class="item">
+                            <span class="ttl">Note 2.&nbsp; </span><span class="select-wrapper"><a href="notes/note_2.pdf" target="_blank">[pdf]</a></span>
+                        </div>
+                     </div>
+                    </tab>
+                    <tab heading="Software">
+                    <div class="slide">
+                        I contribute to my <span class="ppl"><a target="_blank" href="https://github.com/BigRunTheory">Github</a></span> frequently.
+                        </div>
+                    </tab>
+                    <tab heading="Useful Links">
+                        <div class="slide">
+                        Some useful links I would like to archive.<br>
+                        <div class="item">
+                            <span class="ttl"><a href="http://deeplearning.net/" target="_blank">Deep Learning website</a></span>
+                        </div>
+                        <br>
+                        <div class="item">
+                            <span class="ttl"><a href="http://cs229.stanford.edu/materials.html" target="_blank">Andrew NG's lecture notes for Machine Learning (Stanford CS229)</a></span>
+                        </div>
+                        <br>
+                        <div class="item">
+                            <span class="ttl"><a href="http://en.wikibooks.org/wiki/LaTeX" target="_blank">Good reference website for Latex</a></span>
+                        </div>
+                        <br>
+                        <div class="item">
+                            <span class="ttl"><a href="http://www.math.uah.edu/stat/index.html" target="_blank">A very decent reference website for probability and statistics </a></span>
+                        </div>
+                        </div>
+                    </tab>
+                    <tab heading="Personal">
+                       <div class="slide">
+                            <div class="txt">
+                                <span class="txt item litem">1. </span>
+                                <span class="txt item litem">2. </span>
+                                <span class="txt item litem">3. </span>
+                            </div>
+                            </div>
+                    </tab>
+                  </tabset>
+                </div>
+                <div class="footerSection content">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10879595-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</html>

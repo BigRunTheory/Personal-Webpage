@@ -1,0 +1,129 @@
+{
+  "people": {
+    "RC": {
+      "Name": "Run Chen",
+      "url": "https://www.bigruntheory.com/"
+    },
+    "AL": {
+      "Name": "Andrew L. Liu",
+      "url": "https://engineering.purdue.edu/IE/people/ptProfile?resource_id=108617"
+    }
+  },
+  "publications": [
+    {
+      "name": "Journals",
+      "list": [
+          {
+          "webpage": "https://link.springer.com/article/10.1007/s10589-021-00319-x",
+          "url": "papers/A_Distributed_Algorithm_for_High_Dimension_Convex_QCQP.pdf",
+          "code": "https://github.com/BigRunTheory/A-Distributed-Algorithm-for-Large-scale-Convex-QCQPs",
+          "Title": "A distributed algorithm for high-dimension convex quadratically constrained quadratic programs",
+          "authors": ["RC", "AL"],
+          "keywords": ["opt", "ml"],
+          "source": "Computational Optimization and Applications",
+          "year": 2021,
+          "abstract": "We propose a Jacobi-style distributed algorithm to solve convex, quadratically constrained quadratic programs (QCQPs), which arise from a broad range of applications. While small to medium-sized convex QCQPs can be solved efficiently by interior-point algorithms, high-dimension problems pose significant challenges to traditional algorithms that are mainly designed to be implemented on a single computing unit. The exploding volume of data (and hence, the problem size), however, may overwhelm any such units. In this paper, we propose a distributed algorithm for general, non-separable, high-dimension convex QCQPs, using a novel idea of predictor–corrector primal–dual update with an adaptive step size. The algorithm enables distributed storage of data as well as parallel, distributed computing. We establish the conditions for the proposed algorithm to converge to a global optimum, and implement our algorithm on a computer cluster with multiple nodes using message passing interface. The numerical experiments are conducted on data sets of various scales from different applications, and the results show that our algorithm exhibits favorable scalability for solving high-dimension problems."
+        }
+      ]
+    },
+    {
+      "name": "Dissertation",
+      "list": [
+        {
+          "url": "https://hammer.purdue.edu/articles/thesis/On_the_Extensions_of_the_Predictor-Corrector_Proximal_Multiplier_PCPM_Algorithm_and_Their_Applications/13342016",
+          "Title": "On the Extensions of the Predictor-Corrector Proximal Multiplier (PCPM) Algorithm and Their Applications",
+          "authors": ["RC"],
+          "keywords": ["opt", "ml", "es"],
+          "source": "Ph.D.'s Dissertation, Purdue University",
+          "year": 2020       
+        }
+      ]
+    },
+    {
+      "name": "Preprints and Technical Reports",
+      "list": [
+        {
+          "url": "papers/Distributed_and_Asynchronous_Algorithms_for_N_block_Convex_Optimization_with_Coupling_Constraints.pdf",
+          "code": "https://github.com/BigRunTheory/Asynchronous-Proximal-based-Distributed-Algorithms-for-Solving-Network-Lasso",
+          "Title": "Distributed and Asynchronous Algorithms for N-block Convex Optimization with Coupling Constraints",
+          "authors": ["RC", "AL"],
+          "keywords": ["opt", "ml"],
+          "source": "Preprint",
+          "year": 2021,
+          "abstract":"This paper first proposes an N-block PCPM algorithm to solve N-block convex optimization problems with both linear and nonlinear constraints, with global convergence established. A linear convergence rate under the strong second-order conditions for optimality is observed in the numerical experiments. Next, for a starting point, an asynchronous N-block PCPM algorithm is proposed to solve linearly constrained N-block convex optimization problems. The numerical results demonstrate the sub-linear convergence rate under the bounded delay assumption, as well as the faster convergence with more short-time iterations than a synchronous iterative scheme."
+        },
+        {
+          "url": "papers/A_Distributed_Algorithm_for_Multi_Scale_Multi_Stage_Stochastic_Programs_with_Application_to_Electricity_Capacity_Expansion.pdf",
+          "Title": "Distributed and Asynchronous Algorithms for N-block Convex Optimization with Coupling Constraints",
+          "authors": ["RC", "AL"],
+          "keywords": ["opt", "es"],
+          "source": "Preprint",
+          "year": 2021,
+          "abstract":"This paper applies the N-block PCPM algorithm to solve multi-scale multi-stage stochastic programs, with the application to electricity capacity expansion models. Numerical results show that the proposed simplified N-block PCPM algorithm, along with the hybrid decomposition method, exhibits much better scalability for solving the resulting deterministic, large-scale block-separable optimization problem when compared with the ADMM algorithm and the PHA algorithm. The superiority of the algorithm's scalability is attributed to the two key features of the algorithm design: first, the proposed hybrid scenario-node-realization decomposition method with extended nonanticipativity constraints can decompose the original problem under various uncertainties of different temporal scales; second, when applying the N-block PCPM algorithm to solve the resulting deterministic, large-scale N-block convex optimization problem, the technique of orthogonal projection we exploit greatly simplifies the iteration steps and reduce the communication overhead among all computing units, which also contributes to the efficiency of the algorithm."
+        }
+      ]
+    }
+  ],
+  "keywords": {
+    "al": { "id": 1,
+            "key": "al",
+            "show": "true",
+            "name": "All",
+            "color": "#000000"
+    },
+    "opt": {  "id": 2,
+              "show": "true",
+              "key": "opt",
+              "name": "Optimization",
+              "color": "#6600CC"
+    },
+    "ml": {  "id": 3,
+              "show": "true",
+              "key": "ml",
+              "name": "Machine Learning",
+              "color": "#EB545C"
+    },
+    "es": {  "id": 4,
+              "show": "true",
+              "key": "es",
+              "name": "Energy System",
+              "color": "#5AD7BC"
+    },
+    "sc": {  "id": 5,
+              "show": "false",
+              "key": "sc",
+              "name": "Supply Chain",
+              "color": "#FFDE00"
+    },
+    "a": {  "id": 6,
+              "show": "false",
+              "key": "a",
+              "name": "A",
+              "color": "#EBA254"
+    },
+    "b": {  "id": 7,
+              "show": "false",
+              "key": "b",
+              "name": "B",
+              "color": "#3498DB"
+    }
+  },
+  "software": [
+    {
+      "name": "Software Name",
+      "url": "",
+      "details": "Details."
+    }
+  ],
+  "hide": [
+      {
+        "show": false,
+        "Title": "Secret",
+        "url": "papers/secret.pdf",
+        "authors": ["RC"],
+        "keywords": ["sc"],
+        "source": "Technical Report",
+        "year": 2023
+      }
+  ]
+}

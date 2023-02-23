@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/eb57bbd8-0e5c-4d91-a0e0-67b33bdaf614/AppServices/subscriptions/eb57bbd8-0e5c-4d91-a0e0-67b33bdaf614/resourceGroups/RG-BigRunTheory/providers/Microsoft.Web/sites/bigruntheory",
+    "appService.deploySubpath": "."
+}

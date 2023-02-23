@@ -1,0 +1,197 @@
+body,div{margin:0;padding:0;border:0}
+body{background:#fff;min-width:1024px;color:#666;font-family: "PT Sans", sans-serif;font-weight:normal;font-style:normal;font-size:13pt}
+div#OuterCanvas{width:100%;cursor:default}
+div#InnerCanvas{margin:0 12px;text-align:center}
+div#Page{display:inline-block;text-align:left;width:1000px;min-height:400px;margin:20px auto 30px auto;border:1px solid #ccc;border-top-right-radius:80px;border-bottom-left-radius:40px;box-shadow:0 0 24px #bbb;background:#f3f3f3}
+div#Float{position:fixed;visibility:hidden;width:1000px;top:0;left:0;border-left:1px solid #ccc;border-right:1px solid #ccc;box-shadow:0 6px 24px #999}
+
+.keyword{
+display: inline-block;
+padding-left: 10px;
+}
+
+.selectBar{border-bottom:1px solid #ccc;background-color:#ddd;text-align:left;padding:0px;}
+.kbar{border-bottom:1px solid #999;background-color:#ddd;text-align:left;}
+.keyw{
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	margin-left: 5px;
+}
+.kshow{
+  color:#333333;
+}
+.khide{
+  color:#cccccc;
+}
+
+.item{
+padding-left: 10px;
+display:block;
+}
+.slide{
+	padding-left: 30px;
+	padding-top: 10px;
+	display:inline-block;
+	vertical-align: top;
+	min-height: 300px;
+}
+
+.litem{
+padding-bottom:10px;
+}
+.ital{
+	font-style: italic;
+}
+
+.ttl{
+display: inline-block;
+font-weight: bold;
+color:#0969B8
+}
+.subhead{
+display: inline-block;
+font-weight: 600;
+}
+.ppl{
+display: inline-block;
+margin-right:5px;
+}
+.txt{
+display: inline-block;
+}
+.source{
+display: inline-block;
+margin-left: 5px;
+}
+.aboutSection{padding-bottom:30px;min-height:200px}
+.main {
+	position:relative;
+	clear:both;
+	float:left;
+	width:100%;	
+	display: block;	
+}
+
+.panels{
+	float:left;
+	width:100%;
+	position:relative;
+	display: block;
+}
+.infoPanel
+{
+	position:relative;
+	display: inline-block;
+	padding: 20px;
+	vertical-align: top;
+	font-size:12pt
+}
+.nav-tabs>li>a {
+	font-weight: bold;
+}
+.detailsPanel {
+	position:relative;
+	display: inline-block;
+	padding: 20px;
+	vertical-align: top;
+}
+
+.tops .panels {
+	left:0%;			
+}
+.tops .infoPanel{
+	width:28%;			
+	left:2%;			
+}
+.tops .detailsPanel {
+	width:70%;			
+	left:0%;		
+}
+.homeimg{
+	position:relative;
+	float:right;
+	display:block;
+}
+.aboutSection{padding-bottom:30px;overflow:auto;}
+.content{clear: both;overflow:visible;width: 100%;
+}
+.nav-tabs{
+	background-color: #f3f3f3;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+	background-color: #ddd;
+}
+.nav-tabs>li>a:hover{
+	background-color: #ddd;
+}
+.abstract{
+	display: inline-block;
+	width: 95%;
+	color: #363636;
+	vertical-align: top;
+	padding: 10px 10px 10px 15px;
+	font-size: 12pt;
+	background-color: #ffffff;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.rightit{
+float:right;
+}
+.ttl a{color:#0969B8;}
+.ttl a:hover{text-decoration:underline;}
+.ppl a{color:#666;}
+.ppl a:hover{text-decoration:underline;}
+.name {
+	display: inline-block;
+	padding:0px;
+	color: #111;
+	font-size: 36pt;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	font-family: "PT Sans";
+}
+.photoShow{
+  display: inline-block;
+  width:80%;
+  max-height: 450px !important;
+}
+.title {
+	padding: 10px 10px 10px 20px;
+	border-bottom: 2px solid #ddd;
+	border-top-right-radius: 60px;
+	background:#fff;
+}
+@font-face{
+    font-family: Dustismo;
+    src: url('../fonts/Dustismo_Roman_Bold.ttf');
+    font-weight: bold;
+    font-style: normal
+}
+@font-face{
+    font-family: "PT Sans";
+    src: url('../fonts/PT_Sans-Web-Regular.ttf');
+    font-weight: normal;
+    font-style: normal
+}
+@font-face{
+    font-family: "PT Sans";
+    src: url('../fonts/PT_Sans-Web-Italic.ttf');
+    font-weight: normal;
+    font-style: italic
+}
+@font-face{
+    font-family: "PT Sans";
+    src: url('../fonts/PT_Sans-Web-Bold.ttf');
+    font-weight: bold;
+    font-style: normal
+}
+@font-face{
+    font-family: "PT Sans";
+    src: url('../fonts/PT_Sans-Web-BoldItalic.ttf');
+    font-weight: bold;
+    font-style: italic
+}
