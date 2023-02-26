@@ -24,23 +24,35 @@
                     <div class="main tops" ng-controller="info">
                         <div class="panels">
                             <div class="detailsPanel">
-                                <div class="txt">I am a Data & Applied Scientist at Microsoft. </div><br><br>
                                 <div class="txt">
-                                I obtained my Ph.D. degree from <span class="select-wrapper"><a target="_blank" href="https://engineering.purdue.edu/IE">School of Industrial Engineering</a></span> at <span class="select-wrapper"><a target="_blank" href="https://www.purdue.edu/">Purdue Univesity</a></span>, where I worked with <span class="select-wrapper"><a target="_blank" href="https://engineering.purdue.edu/Intel2Grid">Professor Andrew Liu</a></span> in <span class="ttl">Operations Research</span>. During my Ph.D. study, my research interests mainly focused on devevloping distributed algorithms for solving large-scale optimization problems with applicaitons to machine learning models and energy systems.</div><br><br>
+                                    I am a Data & Applied Scientist at Microsoft.
+                                </div>
+                                <br><br>
                                 <div class="txt">
-                                Before pursuing my Ph.D. degree, I obatined my B.S. degree from <span class="select-wrapper"><a target="_blank" href="https://en.ustc.edu.cn/">University of Science and Technology of China</a></span>, majoring in <span class="ttl">Theoretical Physics</span>.</div><br><br>
+                                    I obtained my Ph.D. degree from <span class="select-wrapper"><a target="_blank" href="https://engineering.purdue.edu/IE">School of Industrial Engineering</a></span> at <span class="select-wrapper"><a target="_blank" href="https://www.purdue.edu/">Purdue Univesity</a></span>, where I worked with <span class="select-wrapper"><a target="_blank" href="https://engineering.purdue.edu/Intel2Grid">Professor Andrew Liu</a></span> in <span class="ttl">Operations Research</span>. During my Ph.D. study, my research interests mainly focused on devevloping distributed algorithms for solving large-scale optimization problems with applicaitons to machine learning models and energy systems.
+                                </div>
+                                <br><br>
+                                <div class="txt">
+                                    Before pursuing my Ph.D. degree, I obatined my B.S. degree from <span class="select-wrapper"><a target="_blank" href="https://en.ustc.edu.cn/">University of Science and Technology of China</a></span>, majoring in <span class="ttl">Theoretical Physics</span>.
+                                </div>
+                                <br><br>
                             </div>
                             <div class="infoPanel">
                                 <div class="item">
-                                <img src="Run_Chen.jpg" height="200" width="200" alt="Run Chen"/></div>
+                                    <img src="Run_Chen.jpg" height="200" width="200" alt="Run Chen"/>
+                                </div>
                                 <div class="item">
-                                <span class="ttl">Contact</span><br>
-                                <a class="keyword" target="_blank" ng-href="mailto:{{spams}}"><span class="source">{{spams}}</span></a><br>
-                                <span class="ttl">Information</span><br>
-                                <a href="https://github.com/BigRunTheory" class="keyword" target="_blank"><i class="fa fa-github-square"></i><span class="source">Github</a></span><br>
-                                <a href="https://www.linkedin.com/in/run-chen-27b45ab0/" target="_blank" class="keyword"><i class="fa fa-linkedin-square"></i><span class="source">LinkedIn</span></a>
-                                <br><br>
-                                <a href="./countdown" target="_blank" class="keyword"><i class="fa fa-cog fa-spin"></i><span class="source">Academic CountDown</span></a>
+                                    <span class="ttl">Contact</span>
+                                    <br>
+                                    <a class="keyword" target="_blank" ng-href="mailto:{{}}"><span class="source">{{spams}}</span></a>
+                                    <br>
+                                    <span class="ttl">Information</span>
+                                    <br>
+                                    <a href="https://github.com/BigRunTheory" class="keyword" target="_blank"><i class="fa fa-github-square"></i><span class="source">Github</a></span>
+                                    <br>
+                                    <a href="https://www.linkedin.com/in/run-chen-27b45ab0/" target="_blank" class="keyword"><i class="fa fa-linkedin-square"></i><span class="source">LinkedIn</span></a>
+                                    <br><br>
+                                    <a href="./countdown" target="_blank" class="keyword"><i class="fa fa-cog fa-spin"></i><span class="source">Academic CountDown</span></a>
                                 </div>
                             </div>
                         </div>
@@ -50,82 +62,88 @@
                   <tabset>
                     <tab heading="Publications">
                         <div class="slide">
-                            <div class="kbar">
-                                <div ng-repeat="details in data.keywords | orderBy:'id':false" class="keyword" ng-class="details.show?'kshow':'khide';" ng-click="toggleKeys(details.key)">
-                                    <div class="keyw" ng-style="{'background-color':details.color};"></div>
-                                    <span class="source">{{details.name}}</span>
-                                </div>
+                            <div class="subhead">
+                                Journals:
                             </div>
-                            <div ng-repeat="typ in data.publications | filter:{show:true}">
-                                <div class="subhead">{{typ.name}}:</div><br>
-                                <div ng-repeat="paper in typ.list | filter:showPaper" class="item litem">
-                                    <div class="item litem">
-                                        <a ng-if="paper.Title" target="_blank"><div class="ttl" ng-bind-html="paper.Title"></div></a>
-                                        <div class="source">
-                                            <div ng-repeat="kw in paper.keywords" class="keyw" ng-style="{'background-color':data.keywords[kw].color}"></div>
-                                        </div><br>
-                                        <div class="txt ital">{{paper.source}} <span ng-if="paper.short">({{paper.short}})</span>, {{paper.year}}</div><br>
-                                        <div ng-repeat="ky in paper.authors" class="ppl"><a href="{{data.people[ky].url}}" target="_blank">{{data.people[ky].Name}}</a><span ng-if="!$last">,</span></div><br>
-                                        <div class="txt">
-                                            <a ng-if="paper.url" ng-if="paper.url" href="{{paper.url}}" target="_blank">pdf</a>
-                                            <a class="source" ng-if="paper.abstract" href="" ng-click="paper.ashow = !paper.ashow">abstract</a>
-                                            <a class="source" ng-if="paper.supp" target="_blank" ng-href="{{paper.supp}}">supplementary</a>
-                                            <a class="source" ng-if="paper.code" target="_blank" ng-href="{{paper.code}}">code</a>
-                                            <a class="source" ng-if="paper.data" target="_blank" ng-href="{{paper.data}}">data</a>
-                                            <a class="source" ng-if="paper.slides" target="_blank" ng-href="{{paper.slides}}">slides</a>
-                                            <a class="source" ng-if="paper.website" target="_blank" ng-href="{{paper.website}}">website</a></div><br>
-                                            <div class="txt abstract item" ng-if="paper.ashow" ng-bind-html="paper.abstract">
-                                        </div>
-                                    </div>
-                                </div>
+                            <div>
+                                <span class="ttl"><a href="https://link.springer.com/article/10.1007/s10589-021-00319-x" target="_blank">A Distributed Algorithm for High-Dimension Convex Quadratically Constrained Quadratic Programs</a></span>
+                                <span class="select-wrapper"><a href="papers/A_Distributed_Algorithm_for_High_Dimension_Convex_QCQP.pdf" target="_blank">[pdf]</a></span>
+                                <span class="select-wrapper"><a href="https://github.com/BigRunTheory/A-Distributed-Algorithm-for-Large-scale-Convex-QCQPs" target="_blank">[code]</a></span>
+                            </div>
+                            <div class="txt">
+                                <i>Computational Optimization and Applications, 2021</i><br>
+                                <b>Run Chen</b>, Andrew L. Liu
+                            </div>
+                            <br>
+                            <div class="subhead">
+                                Dissertation:
+                            </div>
+                            <div>
+                                <span class="ttl"><a href="https://hammer.purdue.edu/articles/thesis/On_the_Extensions_of_the_Predictor-Corrector_Proximal_Multiplier_PCPM_Algorithm_and_Their_Applications/13342016" target="_blank">On the Extensions of the Predictor-Corrector Proximal Multiplier (PCPM) Algorithm and Their Applications</a></span>
+                            </div>
+                            <br>
+                            <div class="subhead">
+                                Preprints and Technical Reports:
+                            </div>
+                            <div>
+                                <span class="ttl">Distributed and Asynchronous Algorithms for N-block Convex Optimization with Coupling Constraints</span>
+                                <span class="select-wrapper"><a href="papers/Distributed_and_Asynchronous_Algorithms_for_N_block_Convex_Optimization_with_Coupling_Constraints.pdf" target="_blank">[pdf]</a></span>
+                            </div>
+                            <div class="txt">
+                                <i>Preprint, 2021</i><br>
+                                <b>Run Chen</b>, Andrew L. Liu
+                            </div>
+                            <div>
+                                <span class="ttl">A Distributed Algorithm for Multi-Scale Multi-Stage Stochastic Programs with Application to Electricity Capacity Expansion</span>
+                                <span class="select-wrapper"><a href="papers/A_Distributed_Algorithm_for_Multi_Scale_Multi_Stage_Stochastic_Programs_with_Application_to_Electricity_Capacity_Expansion.pdf" target="_blank">[pdf]</a></span>
+                            </div>
+                            <div class="txt">
+                                <i>Preprint, 2021</i><br>
+                                <b>Run Chen</b>, Andrew L. Liu
                             </div>
                         </div>
                     </tab>
                     <tab heading="Notes">
-                    <div class="slide">
-                        <div class="subhead">Optimization:</div>
-                        <div class="item">
-                            <span class="ttl">Note 1.&nbsp; </span><span class="select-wrapper"><a href="notes/note_1.pdf" target="_blank">[pdf]</a></span>
+                        <div class="slide">
+                            <div class="subhead">
+                                Optimization:
+                            </div>
+                            <div class="item">
+                                <span class="ttl">Note 1.&nbsp; </span><span class="select-wrapper"><a href="notes/note_1.pdf" target="_blank">[pdf]</a></span>
+                            </div>
+                            <div class="item">
+                                <span class="ttl">Note 2.&nbsp; </span><span class="select-wrapper"><a href="notes/note_2.pdf" target="_blank">[pdf]</a></span>
+                            </div>
+                            <br>
+                            <div class="subhead">
+                                Machine Learning:
+                            </div>
                         </div>
-                        <div class="item">
-                            <span class="ttl">Note 2.&nbsp; </span><span class="select-wrapper"><a href="notes/note_2.pdf" target="_blank">[pdf]</a></span>
-                        </div>
-                        <div class="subhead">Machine Learning:</div>
-                    </div>
                     </tab>
                     <tab heading="Useful Links">
                         <div class="slide">
-                        Some useful links I would like to archive.<br>
-                        <div class="item">
-                            <span class="ttl"><a href="http://deeplearning.net/" target="_blank">Deep Learning website</a></span>
-                        </div>
-                        <br>
-                        <div class="item">
-                            <span class="ttl"><a href="http://cs229.stanford.edu/materials.html" target="_blank">Andrew NG's lecture notes for Machine Learning (Stanford CS229)</a></span>
-                        </div>
-                        <br>
-                        <div class="item">
-                            <span class="ttl"><a href="http://en.wikibooks.org/wiki/LaTeX" target="_blank">Good reference website for Latex</a></span>
-                        </div>
-                        <br>
-                        <div class="item">
-                            <span class="ttl"><a href="http://www.math.uah.edu/stat/index.html" target="_blank">A very decent reference website for probability and statistics </a></span>
-                        </div>
+                            <div class="subhead">
+                                Optimization:
+                            </div>
+                            <div class="item">
+                                <span class="ttl"><a href="https://neos-server.org/neos/solvers/index.html" target="_blank">Neos Solver</a></span>
+                            </div>
+                            <br>
+                            <div class="subhead">
+                                Machine Learning:
+                            </div>
                         </div>
                     </tab>
                     <tab heading="Personal">
                        <div class="slide">
                             <div class="txt">
-                                <span class="txt item litem">1. </span>
-                                <span class="txt item litem">2. </span>
-                                <span class="txt item litem">3. </span>
+                                Currently, nothing to share.
                             </div>
-                            </div>
+                        </div>
                     </tab>
                   </tabset>
                 </div>
                 <div class="footerSection content">
-                    </div>
                 </div>
             </div>
         </div>

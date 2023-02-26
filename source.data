@@ -1,323 +1,20 @@
 {
   "people": {
-    "CZ": {
-      "Name": "Xiao Zhang",
-      "url": "https://www.cosmozhang.xyz/"
-    },
-    "DG": {
-      "Name": "Dan Goldwasser",
-      "url": "https://www.cs.purdue.edu/homes/dgoldwas/"
-    },
-    "GF": {
-      "Name": "Gregory Francis",
-      "url": "http://www1.psych.purdue.edu/~gfrancis/home.html"
-    },
-    "KF": {
-      "Name": "Kan Fang",
-      "url": "http://kfang.weebly.com/"
-    },
-    "AH": {
-      "Name": "Alan Hoyt",
-      "url": "https://www.linkedin.com/pub/alan-hoyt/10/432/317"
-    },
-    "ML": {
-      "Name": "Maria Leonor Pacheco",
-      "url": "https://www.cs.purdue.edu/homes/pachecog/"
-    },
-    "YJ": {
-      "Name": "Yong Jiang",
-      "url": "http://sunshiningjiang.github.io/"
-    },
-    "KT": {
-      "Name": "Kewei Tu",
-      "url": "http://sist.shanghaitech.edu.cn/faculty/tukw/"
-    },
-    "HP": {
-      "Name": "Hao Peng",
-      "url": "https://www.cs.purdue.edu/homes/pengh/"
-    },
-    "XL": {
-      "Name": "Xuankang Lin",
-      "url": "http://xuankanglin.com/"
-    },
-    "SJ": {
-      "Name": "Suresh Jagannathan",
-      "url": "https://www.cs.purdue.edu/homes/suresh/"
-    },
-    "MM": {
-      "Name": "Manish Marwah",
-      "url": "http://marwah.org/"
-    },
-    "SZ": {
-      "Name": "Shandian Zhe",
-      "url": "https://www.cs.purdue.edu/homes/szhe/"
-    },
-    "QY": {
-      "Name": "Yuan Qi",
-      "url": "https://www.cs.purdue.edu/homes/alanqi/"
-    },
-    "IL": {
-      "Name": "I-Ta Lee",
-      "url": "https://doug919.github.io/"
-    },
-    "MA": {
-      "Name": "Martin Arlitt"
-    },
-    "MG": {
-      "Name": "Mahak Goindani"
-    },
-    "CL": {
-      "Name": "Chang Li"
-    },
-    "DJ": {
-      "Name": "Di Jin"
-    },
-    "KJ": {
-      "Name": "Kristen Marie Johnson"
-    },
-    "AZ": {
-      "Name": "Abdullah Khan Zehady"
-    },
-    "PD": {
-      "Name": "Pranjal Daga"
-    },
-    "AP": {
-      "Name": "Ayush Parolia"
-    },
-    "HY": {
-      "Name": "Hyokun Yun",
-      "url": "http://bikestra.github.io/"
-    },
-    "CHT": {
-      "Name": "Choon Hui Teo",
-      "url": "http://users.cecs.anu.edu.au/~chteo/"
-    },
-    "WD": {
-      "Name": "Wei Deng"
-    },
-    "JPL": {
-      "Name": "Jiapeng Liu"
-    },
-    "GL": {
-      "Name": "Guang Lin",
-      "url": "https://www.math.purdue.edu/~lin491/"
-    },
-    "FML": {
-      "Name": "Faming Liang",
-      "url": "https://www.stat.purdue.edu/~fmliang/"
-    },
-    "XW": {
-    "Name": "Xiao Wang",
-    "url": "https://www.stat.purdue.edu/~wangxiao/"
-    },
-    "Zhanyu_Wang": {
-    "Name": "Zhanyu Wang",
-    "url": "https://www.stat.purdue.edu/~wang4094/index.html"
-    },
-    "Trishul_Chilimbi": {
-    "Name": "Trishul Chilimbi"
-    }
   },
   "publications": [
     {
-      "name": "Conferences",
-      "list": [
-        {
-          "Title": "MICO: Selective Search with Mutual Information Co-training.",
-          "authors": ["Zhanyu_Wang", "CZ", "HY", "CHT", "Trishul_Chilimbi"],
-          "keywords": ["ml", "nlp", "ir"],
-          "source": "In Proceedings of the International Conference on Computational Linguistics (COLING)",
-          "year": 2022,
-          "url": "papers/coling22.pdf",
-          "code": "https://github.com/aws/selective-search-with-mutual-information-cotraining",
-          "abstract": "In contrast to traditional exhaustive search, selective search first clusters documents into several groups before all the documents are searched exhaustively by a query, to limit the search executed within one group or only a few groups. Selective search is designed to reduce the latency and computation in modern large-scale search systems. In this study, we propose MICO, a Mutual Information COtraining framework for selective search with minimal supervision using the search logs. After training, MICO does not only cluster the documents, but also routes unseen queries to the relevant clusters for efficient retrieval. In our empirical experiments, MICO significantly improves the performance on multiple metrics of selective search and outperforms a number of existing competitive baselines."        
-        },
-        {
-          "Title": "Semi-supervised Autoencoding Projective Dependency Parsing.",
-          "authors": ["CZ", "DG"],
-          "keywords": ["ml", "nlp"],
-          "source": "In Proceedings of the International Conference on Computational Linguistics (COLING)",
-          "year": 2020,
-          "url": "papers/coling20a.pdf",
-          "code": "https://github.com/cosmozhang/autoencoding_parsing",
-          "abstract": "We describe two end-to-end autoencoding models for semi-supervised graph-based projective dependency parsing. The first model is a Locally Autoencoding Parser (LAP) encoding the input using continuous latent variables in a sequential manner; The second model is a Globally Autoencoding Parser (GAP) encoding the input into dependency trees as latent variables, with exact inference. Both models consist of two parts: an encoder enhanced by deep neural networks (DNN) that can utilize the contextual information to encode the input into latent variables, and a decoder which is a generative model able to reconstruct the input. Both LAP and GAP admit a unified structure with different loss functions for labeled and unlabeled data with shared parameters. We conducted experiments on WSJ and UD dependency parsing data sets, showing that our models can exploit the unlabeled data to improve the performance given a limited amount of labeled data, and outperform a previously proposed semi-supervised model."
-        },
-        {
-          "Title": "Cross-Lingual Document Retrieval with Smooth Learning.",
-          "authors": ["JPL", "CZ", "DG", "XW"],
-          "keywords": ["ml", "nlp", "ir"],
-          "source": "In Proceedings of the International Conference on Computational Linguistics (COLING)",
-          "year": 2020,
-          "url": "papers/coling20b.pdf",
-          "code": "https://github.com/JiapengL/multi_ling_search",
-          "abstract": "Cross-lingual document search is an information retrieval task in which the queries' language differs from the documents' language. In this paper, we study the instability of neural document search models and propose a novel end-to-end robust framework that achieves improved performance in cross-lingual search with different documents' languages. This framework includes a novel measure of the relevance, \textit{smooth cosine similarity}, between queries and documents, and a novel loss function, \textit{Smooth Ordinal Search Loss}, as the objective. We further provide theoretical guarantee on the generalization error bound for the proposed framework. We conduct experiments to compare our approach with other document search models, and observe significant gains under commonly used ranking metrics on the cross-lingual document retrieval task in a variety of languages."
-        },
-        {
-          "Title": "ACE--An Anomaly Contribution Explainer for Cyber-Security Applications.",
-          "authors": ["CZ", "MM", "IL", "MA", "DG"],
-          "keywords": ["dm", "security", "ml"],
-          "source": "In Proceedings of the IEEE International Conference on Big Data (BigData)",
-          "year": 2019,
-          "code": "https://github.com/cosmozhang/ACE-KL",
-          "url": "papers/bigdata19.pdf",
-          "abstract": "In this paper, we introduce Anomaly Contribution Explainer or ACE, a tool to explain security anomaly detection models in terms of the model features through a regression framework, and its variant, ACE-KL, which highlights the important anomaly contributors.  ACE and ACE-KL provide insights in diagnosing which attributes significantly contribute to an anomaly by building a specialized linear model to locally approximate the anomaly score that a black-box model generates. We conducted experiments with these anomaly detection models to detect security anomalies on both synthetic data and real data. In particular, we evaluate performance on three public data sets: CERT insider threat, netflow logs, and Android malware. The experimental results are encouraging: our methods consistently identify the correct contributing feature in the synthetic data where ground truth is available; similarly, for real data sets, our methods point a security analyst in the direction of the underlying causes of an anomaly, including in one case leading to the discovery of previously overlooked network scanning activity. We have made our source code publicly available."
-        },
-        {
-          "Title": "An Adaptive Empirical  Bayesian Method for Sparse Deep Learning.",
-          "authors": ["WD", "CZ", "FML", "GL"],
-          "keywords": ["ml"],
-          "source": "In Proceedings of the Conference on Advances in Neural Information Processing Systems (NeurIPS)",
-          "year": 2019,
-          "code": "https://github.com/WayneDW/Bayesian-Sparse-Deep-Learning",
-          "url": "papers/nips19.pdf",
-          "abstract": "We propose a novel adaptive empirical Bayesian (AEB) method for sparse deep learning, where the sparsity is ensured via a class of self-adaptive spike-and-slab priors. The proposed method works by alternatively sampling from an adaptive hierarchical posterior distribution using stochastic gradient Markov Chain Monte Carlo (MCMC) and smoothly optimizing the hyperparameters using stochastic approximation (SA). We further prove the convergence of the proposed method to the asymptotically correct distribution under mild conditions. Empirical applications of the proposed method lead to the state-of-the-art performance on MNIST and Fashion MNIST with shallow convolutional neural networks (CNN) and the state-of-the-art compression performance on CIFAR10 with Residual Networks. The proposed method also improves resistance to adversarial attacks."
-        },
-        {
-          "Title": "Sentiment Tagging with Partial Labels using Modular Architectures.",
-          "authors": ["CZ", "DG"],
-          "keywords": ["ml", "nlp"],
-          "source": "In Proceedings of the Annual Meeting of the Association for Computational Linguistics (ACL)",
-          "year": 2019,
-          "code": "https://github.com/cosmozhang/Modular_Neural_CRF",
-          "url": "papers/acl19.pdf",
-          "abstract": "Many NLP learning tasks can be decomposed into several distinct sub-tasks, each associated with a partial label. In this paper we focus on a popular class of learning problems, sequence prediction applied to several sentiment analysis tasks, and suggest a modular learning approach in which different sub-tasks are learned using separate functional modules, combined to perform the final task while sharing information. Our experiments show this approach helps constrain the learning process and can alleviate some of the supervision efforts."
-        },
-        {
-          "Title": "Semi-supervised Structured Prediction with Neural CRF Autoencoder.",
-          "authors": ["CZ", "YJ", "HP", "KT", "DG"],
-          "keywords": ["ml", "nlp"],
-          "source": "In Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)",
-          "year": 2017,
-          "code": "https://github.com/cosmozhang/NCRF-AE",
-          "url": "papers/emnlp17.pdf",
-          "abstract": "In this paper we propose an end-to-end neural CRF autoencoder (NCRF-AE) model for semi-supervised learning of sequential structured prediction problems. Our NCRF-AE consists of two parts: an encoder which is a CRF model enhanced by deep neural networks, and a decoder which is a generative model trying to reconstruct the input. Our model has a unified structure with different loss functions for labeled and unlabeled data with shared parameters. We developed a variation of the EM algorithm for optimizing both the encoder and the decoder simultaneously by decoupling their parameters. Our experimental results over the Part-of-Speech (POS) tagging task on eight different languages, show that the NCRF-AE model can outperform competitive systems in both supervised and semi-supervised scenarios."
-        },
-        {
-          "Title": "Asynchronous Distributed Variational Gaussian Processes for Regression.",
-          "authors": ["HP", "SZ", "CZ", "QY"],
-          "keywords": ["ml"],
-          "source": "In Proceedings of the International Conference on Machine Learning (ICML)",
-          "year": 2017,
-          "code": "https://github.com/hao-peng/ADVGP",
-          "url": "papers/icml17.pdf",
-          "abstract": "Gaussian processes (GPs) are powerful nonparametric function estimators. However, their applications are largely limited by the expensive computational cost of the inference procedures. Existing stochastic or distributed synchronous variational inferences, although have alleviated this issue by scaling up GPs to millions of samples, are still far from satisfactory for real-world large applications, where the data sizes are often orders of magnitudes larger, say, billions. To solve this problem, we propose ADVGP, the first Asynchronous Distributed Variational Gaussian Process inference for regression, on the recent large-scale machine learning platform, PARAMETERSERVER. ADVGP uses a novel, flexible variational framework based on a weight space augmentation, and implements the highly efficient, asynchronous proximal gradient optimization. While maintaining comparable or better predictive performance, ADVGP greatly improves upon the efficiency of the existing variational methods. With ADVGP, we effortlessly scale up GP regression to a real-world application with billions of samples and demonstrate an excellent, superior prediction accuracy to the popular linear models."
-        },
-        {
-          "url": "papers/sigaccess13.pdf",
-          "Title": "Optimization of Switch Keyboards.",
-          "authors": ["CZ", "KF", "GF"],
-          "abstract": "Patients with motor control difficulties often 'type' on a computer using a switch keyboard to guide a scanning cursor to text elements. We show how to optimize some parts of the design of switch keyboards by casting the design problem as mixed integer programming. A new algorithm to find an optimized design solution is approximately 3600 times faster than a previous algorithm, which was also susceptible to finding a non-optimal solution. The optimization requires a model of the probability of an entry error, and we show how to build such a model from experimental data. Example optimized keyboards are demonstrated.",
-          "keywords": ["ml", "hci"],
-          "source": "In Proceedings of the International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS)",
-          "year": 2013
-        }
-      ]
-    },
-    {
       "name": "Journals",
       "list": [
-          {
-          "url": "papers/emnlp16.pdf",
-          "Title": "Understanding Satirical Articles Using Common-Sense.",
-          "authors": ["DG", "CZ"],
-          "keywords": ["ml", "nlp"],
-          "source": "Transactions of the Association for Computational Linguistics (TACL), presented in EMNLP",
-          "year": 2016,
-          "abstract": "Automatic satire detection is a subtle text classification task, for machines and at times, even for humans. In this paper we argue that satire detection should be approached using common-sense inferences, rather than traditional word-classification methods. We present a highly structured latent variable model capturing the required inferences. The model abstracts over the specific entities appearing in the articles, grouping them into generalized categories, thus allowing the model to adapt to previously unseen situations."
-          },
-          {
-          "url": "papers/CognitiveResearch16.pdf",
-          "code": "https://osf.io/vuaxj/",
-          "Title": "How to optimize switch virtual keyboards to trade off speed and accuracy.",
-          "authors": ["CZ", "KF", "GF" ],
-          "keywords": [ "ml", "hci"],
-          "source": "Cognitive Research: Principles and Implications",
-          "year": 2016,
-          "abstract": "In some circumstances, people interact with a virtual keyboard by triggering a binary switch to guide a moving cursor to target characters or items. Such switch keyboards are commonly used by patients with severely restricted motor capabilities. Typing with such systems enables patients to interact with colleagues, but it is slow and error prone. We develop a methodology that can automate an important part of the design process for optimally structured switch keyboards. We show how to optimize the design of simple switch keyboard systems in a way that minimizes the average entry time while satisfying an acceptable error rate. The first step is to model the user’s ability to use a switch keyboard correctly for different cursor durations. Once the model is defined, our optimization approach assigns characters to locations on the keyboard, identifies an optimal cursor duration, and considers a variety of cursor paths. For our particular case, we show how to build a user model from empirical data and demonstrate that the resulting optimized keyboards are quite different from existing keyboard designs."
-        }
       ]
     },
     {
       "name": "Dissertation",
       "list": [
-        {
-          "webpage": "",
-          "url": "papers/dissertation.pdf",
-          "slides": "papers/defense.pdf",
-          "Title": "Flexible Structured Prediction in Natural Language Processing with Partially Annotated Corpora.",
-          "authors": ["CZ"],
-          "keywords": ["ml", "nlp"],
-          "source": "Ph.D.'s Dissertation, Purdue University",
-          "year": 2020,
-          "abstract":"Structured prediction makes coherent decisions as structured objects to present the interrelations of these predicted variables. They have been widely used in many areas, such as bioinformatics, computer vision, speech recognition, and natural lan- guage processing. Machine Learning with reduced supervision aims to leverage the laborious and error-prone annotation effects and benefit the low-resource languages. In this dissertation we study structured prediction with reduced supervision for two sets of problems, sequence labeling and dependency parsing, both of which are rep- resentatives of structured prediction problems in NLP. We investigate three different approaches. The first approach is learning with modular architecture by task decomposition. By decomposing the labels into location sub-label and type sub-label, we designed neural modules to tackle these sub-labels respectively, with an additional module to infuse the information. The experiments on the benchmark datasets show the modular architecture outperforms existing models and can make use of partially labeled data together with fully labeled data to improve on the performance of using fully labeled data alone. The second approach builds the neural CRF autoencoder (NCRFAE) model that combines a discriminative component and a generative component for semi-supervised sequence labeling. The model has a unified structure of shared parameters, using different loss functions for labeled and unlabeled data. We developed a variant of the EM algorithm for optimizing the model with tractable inference. The experiments xv on several languages in the POS tagging task show the model outperforms existing systems in both supervised and semi-supervised setup. The third approach builds two models for semi-supervised dependency parsing, namely local autoencoding parser (LAP) and global autoencoding parser (GAP). LAP assumes the chain-structured sentence has a latent representation and uses this representation to construct the dependency tree, while GAP treats the dependency tree itself as a latent variable. Both models have unified structures for sentence with and without annotated parse tree. The experiments on several languages show both parsers can use unlabeled sentences to improve on the performance with labeled sentences alone, and LAP is faster while GAP outperforms existing models."        
-        }
-      ]
-    },
-    {
-      "name": "Thesis",
-      "list": [
-        {
-          "webpage": "",
-          "url": "papers/thesis.pdf",
-          "slides": "papers/mccs14.pdf",
-          "Title": "Optimization of Switch Virtual Keyboard by Using Computational Modelling.",
-          "authors": ["CZ"],
-          "keywords": ["ml", "hci"],
-          "source": "Master's Thesis, Purdue University",
-          "year": 2014,
-          "abstract":"In this thesis, I first reviewed some keyboard technologies used by people with motor difficulties, and described design elements that influence efficiency. I cast the design of a switch keyboard as an optimization problem, and arrangement of keys on such a keyboard as a Mixed Integer Programming problem. One significant variable in the MIP problem, the error rate, is related to several other variables. I treated modeling of the error rate as a parameter estimation problem, and used a data mining method. I designed HCI experiments to gather data for parameter estimation, using Bayesian logistic regression model. The empirical data and error rate modeling allowed for construction of several different types of keyboards. These different keyboards were compared and evaluated with regard to their use by people with motor difficulties."
-        }
-      ]
-    },
-    {
-      "name": "Workshops and Shared Tasks",
-      "list": [
-        {
-          "Title": "Semi-supervised Parsing with a Variational Autoencoding Parser",
-          "url": "papers/IWPT20.pdf",
-          "authors": ["CZ", "DG"],
-          "keywords": ["ml", "nlp"],
-          "source": "International Conference on Parsing Technologies (IWPT)",
-          "year": 2020
-        },
-        {
-          "Title": "Predicting Semantic Textual Similarity with Paraphrase and Event Embeddings",
-          "url": "papers/SemEval17.pdf",
-          "authors": ["IL", "MG", "CL", "DJ", "KJ", "CZ", "ML", "DG"],
-          "keywords": ["ml", "nlp"],
-          "source": "11th International Workshop on Semantic Evaluation (SemEval-2017)",
-          "year": 2017
-        },
-        {
-          "Title": "Adapting Event Embedding for Implicit Discourse Relations",
-          "url": "papers/conll16st.pdf",
-          "authors": ["ML", "IL", "CZ", "AZ", "PD", "DJ", "AP", "DG"],
-          "keywords": ["ml", "nlp"],
-          "source": "CoNLL 2016 Shared Task",
-          "year": 2016
-        },
-        {
-          "Title": "Introducing DRAIL -- a Step Towards Declarative Deep Relational Learning.",
-          "url": "papers/emnlp16ws.pdf",
-          "authors": ["CZ", "ML", "CL", "DG"],
-          "keywords": ["ml", "nlp"],
-          "source": "EMNLP 16 Workshop on Structured Prediction for NLP",
-          "year": 2016
-        }
       ]
     },
     {
       "name": "Preprints and Technical Reports",
       "list": [
-        {
-          "Title": "Rademacher Complexity of the Restricted Boltzmann Machine.",
-          "url": "papers/arxiv1.pdf",
-          "authors": ["CZ"],
-          "keywords": ["ml"],
-          "source": "Preprint",
-          "year": 2016,
-          "abstract":"Boltzmann machine, as a fundamental construction block of deep belief network and deep Boltzmann machines, is widely used in deep learning community and great success has been achieved. However, theoretical understanding of many aspects of it is still far from clear. In this paper, we studied the Rademacher complexity of both the asymptotic restricted Boltzmann machine and the practical implementation with single-step contrastive divergence (CD-1) procedure. Our results disclose the fact that practical implementation training procedure indeed increased the Rademacher complexity of restricted Boltzmann machines. A further research direction might be the investigation of the VC dimension of a compositional function used in the CD-1 procedure."
-        }
       ]
     }
   ],
@@ -328,83 +25,29 @@
             "name": "All",
             "color": "#000000"
     },
-    "ml": {  "id": 2,
+    "opt": {  "id": 2,
+              "show": "true",
+              "key": "opt",
+              "name": "Optimization",
+              "color": "#6600CC"
+    },
+    "ml": {  "id": 3,
               "show": "true",
               "key": "ml",
               "name": "Machine Learning",
               "color": "#EB545C"
     },
-    "nlp": {  "id": 3,
+    "es": {  "id": 4,
               "show": "true",
-              "key": "nlp",
-              "name": "NLP",
-              "color": "#EBA254"
-    },
-    "hci": {  "id": 4,
-              "show": "true",
-              "key": "hci",
-              "name": "HCI",
-              "color": "#5AD7BC"
-    },
-    "dm": { "id": 5,
-              "show": "true",
-              "key": "dm",
-              "name": "Data Mining",
-              "color": "#6600CC"
-    },
-    "security": { "id": 6,
-              "show": "true",
-              "key": "security",
-              "name": "Security",
-              "color": "#FFDE00"
-    },
-    "ir": {  "id": 7,
-              "show": "true",
-              "key": "ir",
-              "name": "Information Retrieval",
+              "key": "es",
+              "name": "Energy System",
               "color": "#3498DB"
-    }
-  },
-  "software": [
-    {
-      "name": "Bootstrapped pattern-based entity extraction",
-      "url": "http://nlp.stanford.edu/software/patternslearning.shtml#bootstrap",
-      "details": "A tool to learn entities of given types from unlabeled text, starting out with only a few examples for each type."
     },
-    {
-      "name": "Pattern-based entity extraction visualization",
-      "url": "http://nlp.stanford.edu/software/patternslearning.shtml#viz",
-      "details": "A diagnostic tool to visualize output of multiple pattern-based entity extraction systems and do error analysis."
+    "sc": {  "id": 5,
+              "show": "true",
+              "key": "sc",
+              "name": "Supply Chain",
+              "color": "#FFDE00"
     }
-  ],
-  "experience": [
-    {
-      "when": "Summer 2019",
-      "title": "Applied Research Scientist Intern, A9.com (Amazon Search Science and AI)",
-      "activity": "Developed algorithms for scalable neural information retrieval (IR).",
-      "mentors": ["HY", "CHT"]
-    },
-    {
-      "when": "Summer 2017",
-      "title": "Research Associate Intern, HP Labs",
-      "activity": "Developed explainable machine learning models for cyber security.",
-      "mentors": ["MM"]
-    },
-    {
-      "when": "Summer 2014",
-      "title": "Data Science Intern, Midcontinent Independent System Operator, Inc",
-      "activity": "Applied machine learning to power events detection and desined an alert system."
-    }
-  ],
-  "hide": [
-      {
-        "show": false,
-        "Title": "Learning Latent Memory Models from Litmus Tests.",
-        "url": "papers/tech1.pdf",
-        "authors": ["XL", "CZ", "SJ"],
-        "keywords": ["ml"],
-        "source": "Technical Report",
-        "year": 2017
-      }
-  ]
+  }
 }
