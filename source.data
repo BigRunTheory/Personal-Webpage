@@ -87,43 +87,13 @@
               "show": "true",
               "key": "es",
               "name": "Energy System",
-              "color": "#5AD7BC"
+              "color": "#3498DB"
     },
     "sc": {  "id": 5,
-              "show": "false",
+              "show": "true",
               "key": "sc",
               "name": "Supply Chain",
               "color": "#FFDE00"
-    },
-    "a": {  "id": 6,
-              "show": "false",
-              "key": "a",
-              "name": "A",
-              "color": "#EBA254"
-    },
-    "b": {  "id": 7,
-              "show": "false",
-              "key": "b",
-              "name": "B",
-              "color": "#3498DB"
     }
-  },
-  "software": [
-    {
-      "name": "Software Name",
-      "url": "",
-      "details": "Details."
-    }
-  ],
-  "hide": [
-      {
-        "show": false,
-        "Title": "Secret",
-        "url": "papers/secret.pdf",
-        "authors": ["RC"],
-        "keywords": ["sc"],
-        "source": "Technical Report",
-        "year": 2023
-      }
-  ]
+  }
 }
