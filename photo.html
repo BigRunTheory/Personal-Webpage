@@ -23,9 +23,20 @@
         }
 
         .image-cover-modal {
-            width: 20%;
-            margin: 1%;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            position: fixed;
+            z-index: 30;
+            left: 0;
+            top: 0;
+            width: 24%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.9);
+            transition: opacity ease 0.3s;
+            pointer-events: none;
         }
 
         .model-shown {
@@ -60,27 +71,29 @@
     </style>
 </head>
 <body>
-    <h1>My Photo Gallery</h2>
+    <h1>My Photo Gallery</h1>
     <br><br>
-    <h2>Golden Larches at Cutthroat Pass via PCT</h2h2>
-        <div id="image-cover-modal" class="image-cover-modal">
-        <img src="photos/Golden Larches/Mountain_Fog.JPG" class="image-cover-modal-content">
-        <div id="image-cover-caption">Golden Larches</div>
-        </div>
-        <div id="image-cover-modal" class="image-cover-modal">
-        <img src="photos/Golden Larches/Random_Green.JPG" class="image-cover-modal-content">
-        <div id="image-cover-caption"></div>
-        </div>
-        <div id="image-cover-modal" class="image-cover-modal">
-        <img src="photos/Golden Larches/Golden_Larches_1.JPG" class="image-cover-modal-content">
-        <div id="image-cover-caption"></div>
-        </div>
-        <div id="image-cover-modal" class="image-cover-modal">
-        <img src="photos/Golden Larches/Golden_Larches_2.JPG" class="image-cover-modal-content">
-        <div id="image-cover-caption"></div>
+    <h2>Golden Larches at Cutthroat Pass via PCT</h2>
+        <div class="gallery"></div>
+            <div id="image-cover-modal" class="image-cover-modal">
+            <img src="photos/Golden Larches/Mountain_Fog.JPG" class="image-cover-modal-content">
+            <div id="image-cover-caption">Golden Larches</div>
+            </div>
+            <div id="image-cover-modal" class="image-cover-modal">
+            <img src="photos/Golden Larches/Random_Green.JPG" class="image-cover-modal-content">
+            <div id="image-cover-caption"></div>
+            </div>
+            <div id="image-cover-modal" class="image-cover-modal">
+            <img src="photos/Golden Larches/Golden_Larches_1.JPG" class="image-cover-modal-content">
+            <div id="image-cover-caption"></div>
+            </div>
+            <div id="image-cover-modal" class="image-cover-modal">
+            <img src="photos/Golden Larches/Golden_Larches_2.JPG" class="image-cover-modal-content">
+            <div id="image-cover-caption"></div>
+            </div>
         </div>
     <br><br>
-    <h2>Mount Rainier</h2h2>
+    <h2>Mount Rainier</h2>
         <div class="gallery">
             <div id="image-cover-modal" class="image-cover-modal">
             <img src="photos/Mount Rainier/Mount_Rainier_at_Kite_Park.jpg" class="image-cover-modal-content">
