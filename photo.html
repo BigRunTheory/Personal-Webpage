@@ -1,5 +1,41 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
+<head>
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+          .image-container {
+            width: 30%;
+            margin: 1%;
+            text-align: center;
+          }
+    
+          .image {
+            width: 100%;
+          }
+        </style>
+</head>
+<body>
+        <h2>My Photo Gallery</h2>
+        <div class="gallery">
+          <div class="image-container">
+            <img src="images/Run_Chen.jpg" alt="Image 1" class="image">
+            <p>Image 1</p>
+          </div>
+          <div class="image-container">
+            <img src="images/Run_Chen.jpg" alt="Image 2" class="image">
+            <p>Image 2</p>
+          </div>
+          <div class="image-container">
+            <img src="images/Run_Chen.jpg" alt="Image 3" class="image">
+            <p>Image 3</p>
+          </div>
+        </div>
+</body>
 <script type="text/javascript">
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
     document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
